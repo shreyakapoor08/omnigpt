@@ -3,8 +3,8 @@ const moment = require('moment');
 
 const [monthly, biyearly, yearly] = ['price_1PdfgZ01hABKBF0gdRIMJBFp', 'price_1PdfhA01hABKBF0gU0dGLozj', 'price_1PdfiO01hABKBF0gMkm169vB'];
 
-const stripe = require("stripe")('sk_test_51Oz5el01hABKBF0gIItdBBUC4yZh9gP4l8AqRSzWmKqtEjJ1iK7fnbHLmucEVBlUYUkaXe1Oiy2YpaPjcFFgqLlJ00hRD7Wb1U')
-
+// const stripe = require("stripe")('sk_test_51Oz5el01hABKBF0gIItdBBUC4yZh9gP4l8AqRSzWmKqtEjJ1iK7fnbHLmucEVBlUYUkaXe1Oiy2YpaPjcFFgqLlJ00hRD7Wb1U')
+const stripe = require("stripe")('entersecrethere')
 const admin = require('firebase-admin');
 const serviceAccount = require('../omnigpt-bf0f1-firebase-adminsdk-63i1b-d636f53b1d.json')
 admin.initializeApp({credential: admin.credential.cert(serviceAccount)});
